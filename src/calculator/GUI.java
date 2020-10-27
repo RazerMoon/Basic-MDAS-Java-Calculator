@@ -6,7 +6,6 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
@@ -74,7 +73,7 @@ public class GUI extends JFrame {
 						isClear = true;
 					}
 					
-					if (currentNumber == 0 || Arrays.stream(ops).anyMatch(displayLabel.getText()::equals)) {
+					if (currentNumber == 0) {
 						currentNumber = num;
 					} else {
 						currentNumber = currentNumber * 10 + num;
