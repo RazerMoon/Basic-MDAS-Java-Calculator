@@ -87,9 +87,7 @@ public class GUI extends JFrame {
 		}
 		
 		// +, -, x, /
-		for (int i = 0; i < ops.length; i++) {
-			
-			final String op = ops[i];
+		for (String op : ops) {
 			
 		    JButton button = new JButton( new AbstractAction(op) { 
 				private static final long serialVersionUID = 1L;
